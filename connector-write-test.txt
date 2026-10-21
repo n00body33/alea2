@@ -1,0 +1,3 @@
+GitHub connector write test
+
+Created on 2026-10-21 for a user-requested toy pull request to verify branch, file, and pull-request write access after an authentication workaround.
