@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "template_only",
+  "evaluation": "synthetic_fixture_shape_check",
+  "code_revision": "REPLACE_WITH_FULL_COMMIT_SHA",
+  "command": "python3 scripts/synthetic_smoke.py",
+  "environment": {
+    "python_version": "RECORD_EXACT_VERSION",
+    "dependencies": "Python standard library only",
+    "platform": "RECORD_OS_AND_ARCHITECTURE",
+    "hardware_and_backend": "CPU-only fixture check; no inference backend"
+  },
+  "seed": null,
+  "input_class": "synthetic",
+  "public_inputs": ["tests/fixtures/synthetic/dialogue.jsonl"],
+  "metrics": {
+    "fixture_records": "Number of invented JSONL records read",
+    "valid_records": "Records with synthetic=true and non-empty string prompt/response"
+  },
+  "determinism": "Deterministic shape check; no model, randomness, or network",
+  "limitations": [
+    "Template only; contains no measured reconstruction result",
+    "Synthetic plumbing control provides no evidence of personal fidelity"
+  ]
+}
